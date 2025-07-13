@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="../gallery-/style.css">
+    <script src="../gallery-/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="gallery-container">
+       <div id="moh"> <div class="gallery-header">
+            <img src="../gallery-/imge/my photo.jpg" alt="My Photo Logo" class="logo-img">
+            <h1>My Awesome Gallery</h1>
+        </div>
+    </div>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="cities">Cities</button>
+            <button class="filter-btn" data-filter="animals">Animals</button>
+        </div>
+
+        <div class="image-gallery" id="imageGallery">
+            <div class="gallery-item nature" data-src="../gallery-/imge/forest.jpg" data-category="nature">
+                <img src="../gallery-/imge/forest.jpg" alt="Forest Landscape">
+                <div class="overlay"><span>View</span></div>
+            </div>
+            <div class="gallery-item cities" data-src="../gallery-/imge/city_1.jpg" data-category="cities">
+                <img src="../gallery-/imge/city_1.jpg" alt="City Skyline">
+                <div class="overlay"><span>View</span></div>
+            </div>
+            <div class="gallery-item animals" data-src="../gallery-/imge/wild_animal_1.jpg" data-category="animals">
+                <img src="../gallery-/imge/wild_animal_1.jpg" alt="Wildlife Animal">
+                <div class="overlay"><span>View</span></div>
+            </div>
+            <div class="gallery-item nature" data-src="../gallery-/imge/mountain_1.jpg" data-category="nature">
+                <img src="../gallery-/imge/mountain_1.jpg" alt="Mountain View">
+                <div class="overlay"><span>View</span></div>
+            </div>
+            <div class="gallery-item cities" data-src="../gallery-/imge/building_1.jpg" data-category="cities">
+                <img src="../gallery-/imge/building_1.jpg" alt="Building Architecture">
+                <div class="overlay"><span>View</span></div>
+            </div>
+            <div class="gallery-item animals" data-src="../gallery-/imge/pate_2.jpg" data-category="animals">
+                <img src="../gallery-/imge/pate_2.jpg" alt="Cute Pet">
+                <div class="overlay"><span>View</span></div>
+            </div>
+            <div class="gallery-item nature" data-src="../gallery-/imge/env.jpg" data-category="nature">
+                <img src="../gallery-/imge/env.jpg" alt="Beach Sunset">
+                <div class="overlay"><span>View</span></div>
+            </div>
+            <div class="gallery-item cities" data-src="../gallery-/imge/night_bridge_1.jpg" data-category="cities">
+                <img src="../gallery-/imge/night_bridge_1.jpg" alt="Night Bridge">
+                <div class="overlay"><span>View</span></div>
+            </div>
+            <div class="gallery-item animals" data-src="../gallery-/imge/bird_flight_1.jpg" data-category="animals">
+                <img src="../gallery-/imge/bird_flight_1.jpg" alt="Birds in Flight">
+                <div class="overlay"><span>View</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lightbox" id="lightbox">
+        <span class="close-btn">&times;</span>
+        <img src="" alt="Lightbox Image" class="lightbox-img" id="lightboxImg">
+        <a class="prev-btn"><i class="fas fa-chevron-left"></i></a>
+        <a class="next-btn"><i class="fas fa-chevron-right"></i></a>
+    </div>
+</body>
+</html>
